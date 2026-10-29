@@ -104,6 +104,34 @@ The redesign retains the familiar food-delivery tracking layout while adding con
 
 **Note:** The before screen is a recreated layout, and the after screen is a proposed concept. Neither represents internal Swiggy product data.
 
+---
+
+## Before: Existing Tracking Experience
+
+The original-layout recreation shows the delivery partner's route and estimated arrival time, but does not explain an unexpected stop.
+
+<p align="center">
+  <img
+    src="assets/before.png"
+    alt="Before redesign: existing-style food delivery tracking screen"
+    width="500"
+  />
+</p>
+
+## After: Proposed Delivery Transparency
+
+The redesigned concept adds a confirmed delivery sequence, a clearer ETA, and a contextual explanation of the route while protecting other customers' privacy.
+
+<p align="center">
+  <img
+    src="assets/after.png"
+    alt="After redesign: delivery sequence and route transparency"
+    width="500"
+  />
+</p>
+
+> **Note:** Both screens are independent concept designs. The original-layout recreation is not an official Swiggy interface, and the redesign is not a live product feature.
+
 
 > **Note on visual artifacts:** The “before” screen is a recreation for design comparison, not an official internal Swiggy interface. The “after” screen illustrates a proposed experience, not a live product feature.
 
