@@ -129,10 +129,11 @@ Integrated M.Tech in Software Engineering
 > **"Analyzing 50 Negative Reviews, Grouping Churn Drivers, and Specifying One High-Impact Fix"**
 
 - **The Product Audited:** Swiggy (Food Delivery & Swiggy Instamart).
-- **The Core Finding:** An audit of 50 consecutive 1-star & 2-star reviews reveals that **64% of public 1-star ratings stem from post-delivery resolution failure**—specifically, hostile support chatbots refusing refunds for missing or spilled items.
-- **The Recommended Fix:** **Swiggy TrustShield**—an automated 1-tap item-level resolution flow with Account Trust Scoring (ATS), eliminating the adversarial chatbot loop and granting instant wallet credit (+10% loyalty bonus) or re-order dispatch.
-- **The Raw Complaints Dataset:** 50 cataloged customer reviews with a dedicated screenshot gallery in [`/complaints`](./Swiggy-App-Store-Review-Analysis/complaints).
-- **Target Impact:** 30-day post-complaint retention lift ($38.2\% \rightarrow \ge 72.0\%$) and public App Store rating lift from $3.9 \rightarrow 4.4$ stars.
+- **The Core Finding:** An audit of 50 consecutive review screenshots reveals that customer churn is driven by breakdowns across the complete service journey—unreliable delivery promises, inconsistent fulfillment, and support resolution failures.
+- **Problem Prioritization:** Established a rigorous P0/P1/P2 framework prioritizing P0 (Order Integrity & Rapid Dispute Resolution) to stop immediate customer financial harm.
+- **The Recommended Fix:** A detailed PRD for the **Failed-Order Resolution Experience** offering 1-tap item-level dispute flows and transparent replacement/refunds.
+- **The Raw Complaints Dataset:** All 50 original captured review screenshots (`1.jpeg` to `50.jpeg`) preserved and indexed in [`/complaint`](./Swiggy-App-Store-Review-Analysis/complaint).
+- **Target Impact:** On-time delivery lift (+5%), missing-item dispute reduction (-15%), and first-contact resolution lift (+10%).
 
 👉 **[Read the full Swiggy VoC Analysis](./Swiggy-App-Store-Review-Analysis)**
 
@@ -184,10 +185,10 @@ Product-Project-Management-portfolio/
 │   └── redesigns/                                     # Value-first wireframes & architecture
 │       └── .gitkeep
 └── Swiggy-App-Store-Review-Analysis/                  # VoC Case Study: 50 review audit & resolution fix
-    ├── README.md                                      # Review taxonomy, Pareto chart & PRD
-    └── complaints/                                    # Raw review screenshots and 50-entry log
-        ├── README.md                                  # 50-review classification table & guide
-        └── .gitkeep
+    ├── README.md                                      # Review breakdown, P0/P1/P2 matrix & PRD
+    └── complaint/                                     # Raw review screenshots and 50-entry log
+        ├── README.md                                  # 50-review screenshot index
+        └── [1.jpeg - 50.jpeg]                         # 50 captured user review screenshots
 ```
 
 ---
