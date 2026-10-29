@@ -26,6 +26,7 @@ Integrated M.Tech in Software Engineering
 | **Nykaa First-Order Trial Pass (PRD)** | Growth PRD · Checkout Conversion · Fraud Controls | An execution-ready PRD solving small-basket checkout abandonment by waiving the ₹70 shipping charge under ₹299 and offering a complimentary deluxe sample. | [View PRD →](./Nykaa-First-Order-Trial-Pass-PRD) |
 | **Fitness App Onboarding UX Audit** | UX Teardown · Growth & Activation · Heuristic Audit | Audits Noom's 40-screen onboarding funnel against Nielsen Norman heuristics, identifying 5 "almost quit" friction gates and proposing a value-first redesign. | [View UX Audit →](./Fitness-App-Onboarding-UX-Audit) |
 | **Swiggy App Store Review Analysis** | Voice of Customer (VoC) · Defect Prioritization · Support UX | Analyzes 50 negative App Store reviews to uncover churn drivers, proving 64% of 1-star rage stems from refund denials, and specifies the TrustShield instant resolution fix. | [View Review Analysis →](./Swiggy-App-Store-Review-Analysis) |
+| **Nykaa Onboarding UX Audit & A/B Test Plan** | UX Onboarding Audit · Growth Experimentation · A/B Testing | Audits Nykaa's first-time onboarding funnel, synthesizes 50 app reviews, and designs an A/B test (Guest-First Browsing vs. Mandatory Phone Wall) targeting a +32% activation lift. | [View A/B Test Plan →](./Nykaa-UX-Onboarding-AB-Test-Plan) |
 
 ---
 
@@ -139,12 +140,26 @@ Integrated M.Tech in Software Engineering
 
 ---
 
+### Spotlight 8: [Nykaa Onboarding UX Audit & Growth Experimentation (A/B Test Plan)](./Nykaa-UX-Onboarding-AB-Test-Plan)
+
+> **"Targeting Conversion Bottlenecks in Beauty E-Commerce Onboarding via Lazy Registration"**
+
+- **The Friction:** Mandatory phone OTP verification on cold launch creates immediate drop-offs for exploratory shoppers (38% of negative reviews cite login/OTP loops).
+- **The Experiment:** Control (A) Mandatory Upfront Phone Gate vs. Variant (B) Guest-First Browsing with sticky *"Unlock ₹200 Off"* incentive banner (registration deferred to bag/checkout).
+- **Primary Metric:** First-Session Activation Rate (+32% lift target, $p < 0.01$).
+- **Visual Artifacts Included:** UI side-by-side comparison mockup, onboarding friction scorecard, heuristic breakdown, and experiment telemetry protocol.
+
+👉 **[Read the full Nykaa A/B Test Case Study](./Nykaa-UX-Onboarding-AB-Test-Plan)**
+
+---
+
 ## 🛠️ Core Competencies & Tooling
 
 - **Product Discovery & Definition:** User interviews, empathy mapping, problem statement formulation, PRDs, user stories.
 - **UI/UX & Wireframing:** Information architecture, progressive disclosure, edge case mapping, screen redesigns.
 - **Product Analytics & Experimentation:** Success & guardrail metrics definition, North Star hierarchy, A/B test rollout frameworks, survey instrumentation.
 - **UX Audits & Heuristic Evaluation:** Onboarding funnel analysis, cognitive load reduction, dark pattern elimination, Nielsen Norman heuristics.
+- **Growth Experimentation & A/B Testing:** Hypothesis formulation, sample size sizing, variant specification, guardrail definitions.
 - **Voice of Customer (VoC) Analysis:** App store review scraping & classification, defect taxonomy, Pareto churn modeling.
 - **Competitive Strategy & Market Sizing:** Funnel teardowns, subscription & loyalty economics, CAC/LTV analysis.
 - **Technical & Agile Execution:** Software engineering background (Integrated M.Tech), API/privacy constraints understanding, sprint planning & backlog management.
@@ -184,11 +199,16 @@ Product-Project-Management-portfolio/
 │   │   └── .gitkeep
 │   └── redesigns/                                     # Value-first wireframes & architecture
 │       └── .gitkeep
-└── Swiggy-App-Store-Review-Analysis/                  # VoC Case Study: 50 review audit & resolution fix
-    ├── README.md                                      # Review breakdown, P0/P1/P2 matrix & PRD
-    └── complaint/                                     # Raw review screenshots and 50-entry log
-        ├── README.md                                  # 50-review screenshot index
-        └── [1.jpeg - 50.jpeg]                         # 50 captured user review screenshots
+├── Swiggy-App-Store-Review-Analysis/                  # VoC Case Study: 50 review audit & resolution fix
+│   ├── README.md                                      # Review breakdown, P0/P1/P2 matrix & PRD
+│   └── complaint/                                     # Raw review screenshots and 50-entry log
+│       ├── README.md                                  # 50-review screenshot index
+│       └── [1.jpeg - 50.jpeg]                         # 50 captured user review screenshots
+└── Nykaa-UX-Onboarding-AB-Test-Plan/                  # Growth & A/B Testing: Guest-first lazy registration
+    ├── README.md                                      # Heuristic evaluation, scorecard & test protocol
+    └── assets/                                        # Cover visual & Control vs Variant UI mockup
+        ├── cover-thumbnail.png
+        └── comparison-01-sign-in-wall.png
 ```
 
 ---
