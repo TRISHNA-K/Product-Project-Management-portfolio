@@ -21,6 +21,7 @@ Integrated M.Tech in Software Engineering
 |---|---|---|---|
 | **Swiggy Delivery Transparency** | UX Redesign · Live Tracking · Retention | Solves post-order detour uncertainty during batched/multi-drop food deliveries with progressive disclosure and contextual badges. | [View Case Study →](./Swiggy-Delivery-Transparency-One-Screen-Redesign) |
 | **Campus Ride-Sharing & Travel Reliability** | User Research · Discovery · Trust & Safety | Investigates off-campus travel friction across 5 student archetypes, identifying coordination breakdown and trust barriers, and defining a verified carpooling framework. | [View Case Study →](./Campus-Ride-Sharing-User-Research) |
+| **Beauty E-Commerce Competitor Analysis** | Product Strategy · Funnel Economics · Loyalty | Evaluates Nykaa, Purplle, and Tira on user acquisition, spend-based vs. subscription memberships, and proposes a zero-threshold trial pass to solve the new-user conversion chasm. | [View Case Study →](./Beauty-Ecommerce-Competitor-Analysis) |
 
 ---
 
@@ -54,11 +55,28 @@ Integrated M.Tech in Software Engineering
 
 ---
 
+### Spotlight 3: [Beauty E-Commerce Competitor Analysis — Nykaa vs. Purplle vs. Tira](./Beauty-Ecommerce-Competitor-Analysis)
+
+> **"How Three Beauty Platforms Convert, Retain, and Monetise Different Segments of the Indian Beauty Shopper"**
+
+- **The Strategic Focus:** Comparative PM teardown across 6 core operational dimensions (target user, feature architecture, loyalty/membership mechanics, shipping unit economics, optimizations, and shortcomings).
+- **The Platform Archetypes:** 
+  1. **Nykaa:** Retention via catalogue scale, content-to-commerce, and spend-gated loyalty (*Nykaa Prive*).
+  2. **Purplle:** High-velocity discount engine and monetized paid memberships (*Elite / ElitePro*) to de-risk COD.
+  3. **Tira:** Premium luxury discovery, AI beauty tech, RUSH delivery, and omnichannel retail across 32 flagship stores.
+- **The Product Opportunity:** *"The New-User Conversion Gap"*—identifying how spend thresholds and paywalls suppress top-of-funnel conversion for single-item baskets, and specifying a PRD for a **Zero-Threshold Discovery Trial Pass** with unit economics defense.
+- **Artifacts Included:** Market positioning quadrant chart, 6-dimension comparative matrix, system sequence diagrams, feature PRD, and execution Gantt chart with decision rules.
+
+👉 **[Read the full Beauty E-Commerce Case Study](./Beauty-Ecommerce-Competitor-Analysis)**
+
+---
+
 ## 🛠️ Core Competencies & Tooling
 
 - **Product Discovery & Definition:** User interviews, empathy mapping, problem statement formulation, PRDs, user stories.
 - **UI/UX & Wireframing:** Information architecture, progressive disclosure, edge case mapping, screen redesigns.
 - **Product Analytics & Experimentation:** Success & guardrail metrics definition, A/B test rollout frameworks, survey instrumentation.
+- **Competitive Strategy & Market Sizing:** Funnel teardowns, subscription & loyalty economics, CAC/LTV analysis.
 - **Technical & Agile Execution:** Software engineering background (Integrated M.Tech), API/privacy constraints understanding, sprint planning & backlog management.
 
 ---
@@ -74,9 +92,13 @@ Product-Project-Management-portfolio/
 │       ├── before.png
 │       ├── after.png
 │       └── before vs after.png
-└── Campus-Ride-Sharing-User-Research/                 # Case Study: Campus mobility & ride discovery
-    ├── README.md                                      # User research synthesis & concept PRD
-    └── assets/                                        # Research artifacts and diagrams
+├── Campus-Ride-Sharing-User-Research/                 # Case Study: Campus mobility & ride discovery
+│   ├── README.md                                      # User research synthesis & concept PRD
+│   └── assets/                                        # Research artifacts and diagrams
+│       └── .gitkeep
+└── Beauty-Ecommerce-Competitor-Analysis/              # Case Study: Indian BPC competitor teardown
+    ├── README.md                                      # Comparative analysis & trial pass PRD
+    └── assets/                                        # Visual diagrams & charts
         └── .gitkeep
 ```
 
