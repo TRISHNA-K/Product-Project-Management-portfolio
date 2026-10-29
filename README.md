@@ -84,7 +84,13 @@ When tracking an order, customers need to understand:
 ## 4. Before and After
 
 The redesign retains the familiar structure of a food-delivery tracking screen while introducing contextual information where it can help customers most.
-| <img src="assets/before vs after.png" alt="After: Proposed delivery sequence & route transparency" width="360"/> |
+<p align="center">
+  <img
+    src="assets/before vs after.png"
+    alt="Before and after comparison of the Swiggy delivery tracking redesign"
+    width="900"
+  />
+</p>
 | Before (Existing-Layout Recreation) | After (Proposed Redesign Concept) |
 |:---:|:---:|
 | <img src="assets/before.png" alt="Before: Existing layout recreation" width="360"/> | <img src="assets/after.png" alt="After: Proposed delivery sequence & route transparency" width="360"/> |
