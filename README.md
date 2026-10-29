@@ -84,17 +84,26 @@ When tracking an order, customers need to understand:
 ## 4. Before and After
 
 The redesign retains the familiar structure of a food-delivery tracking screen while introducing contextual information where it can help customers most.
+
+## 4. Before and After
+
+The redesign retains the familiar food-delivery tracking layout while adding contextual information to help customers understand unexpected delivery stops.
+
 <p align="center">
-  <img
-    src="assets/before vs after.png"
-    alt="Before and after comparison of the Swiggy delivery tracking redesign"
-    width="900"
-  />
+  <img src="assets/before vs after.png"
+       alt="Before and after comparison of the delivery tracking redesign"
+       width="850" />
 </p>
-| Before (Existing-Layout Recreation) | After (Proposed Redesign Concept) |
-|:---:|:---:|
-| <img src="assets/before.png" alt="Before: Existing layout recreation" width="360"/> | <img src="assets/after.png" alt="After: Proposed delivery sequence & route transparency" width="360"/> |
-| *Standard tracking view: unexplained detour causes anxiety and customer confusion.* | *Proposed view: clear delivery sequence, prominent ETA, and "Why this route?" context.* |
+
+<p align="center">
+  <em>
+    Before: an unexplained route change.
+    After: a clearer delivery sequence, ETA updates, and route explanation.
+  </em>
+</p>
+
+**Note:** The before screen is a recreated layout, and the after screen is a proposed concept. Neither represents internal Swiggy product data.
+
 
 > **Note on visual artifacts:** The “before” screen is a recreation for design comparison, not an official internal Swiggy interface. The “after” screen illustrates a proposed experience, not a live product feature.
 
