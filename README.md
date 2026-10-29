@@ -4,16 +4,6 @@ Welcome to my Product and Project Management portfolio. This repository gathers 
 
 ---
 
-## 👤 About Me
-
-**Trishna K**  
-Integrated M.Tech in Software Engineering  
-*Aspiring Product / Project Manager with a strong technical foundation in software engineering, UX optimization, and data-driven product decisions.*
-
-- **GitHub:** [@TRISHNA-K](https://github.com/TRISHNA-K)
-- **Email:** [trishnakuruppath@gmail.com](mailto:trishnakuruppath@gmail.com)
-
----
 
 ## 📂 Featured Case Studies & Projects
 
