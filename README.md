@@ -1,0 +1,74 @@
+# Making Delivery Detours Understandable
+
+### A One-Screen Redesign of Food-Delivery Order Tracking
+
+*A self-directed product management case study: one problem, one screen, one measurable goal.*
+
+| Field | Details |
+|---|---|
+| **Project type** | Product Management · UX Improvement |
+| **Role** | Product Manager — Self-Directed Case Study |
+| **Product** | Swiggy (independent concept) |
+| **Scope** | Live order-tracking screen |
+| **Status** | Concept and prototype development |
+
+> **Disclaimer:** This is an independent case study and is not affiliated with or endorsed by Swiggy or Zomato. No internal company data was used.
+
+## 1. Overview
+
+When a delivery partner takes an unexpected route, customers may wonder whether another delivery stop is affecting their order.
+
+**Proposed solution:**
+- Make the estimated arrival time prominent.
+- Explain confirmed intermediate delivery stops.
+- Add a concise “Why this route?” explanation without revealing other customers' details.
+
+**Primary metric:** Delivery-status clarity score, measured on a 1–5 scale.
+
+## 2. Problem Statement
+
+Frequent food-delivery customers may feel uncertain when their delivery partner travels along an unexpected route. Without clear information about the delivery sequence, they may struggle to understand whether an intermediate stop is affecting their order.
+
+## 3. Target User
+
+Frequent food-delivery customers who value predictable and transparent delivery updates.
+
+## 4. Proposed Success Metrics
+
+- **Primary:** Delivery-status clarity score.
+- **Supporting:** Order-tracking satisfaction.
+- **Supporting:** Delivery-related support contacts per 1,000 orders.
+- **Guardrail:** ETA accuracy.
+
+These are proposed metrics, not measured results.
+
+## 5. Validation Plan
+
+1. Interview five frequent food-delivery customers.
+2. Create before-and-after wireframes.
+3. Test whether users understand the delivery sequence.
+4. Compare clarity against a baseline.
+5. Recommend further testing only if the evidence supports the solution.
+
+## 6. Limitations
+
+- The problem originates from a personal observation.
+- The prevalence and cause of the problem are unconfirmed.
+- The proposed solution has not yet been validated with users.
+- No improvement in customer satisfaction or ETA accuracy is claimed.
+
+## 7. Project Status
+
+- [x] Problem statement
+- [x] Target user
+- [x] Solution concept
+- [x] Proposed success metrics
+- [ ] Customer interviews
+- [ ] Competitor research
+- [ ] Prototype testing
+- [ ] Findings and recommendation
+
+## Author
+
+**Trishna K**  
+Integrated M.Tech in Software Engineering · VIT-AP University
