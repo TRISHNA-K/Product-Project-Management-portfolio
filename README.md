@@ -308,8 +308,5 @@ This case study demonstrates how targeted, contextual transparency can solve a h
 ## Author
 
 **Trishna K**  
-Integrated M.Tech in Software Engineering · VIT-AP University  
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github)](https://github.com/TRISHNA-K)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail)](mailto:trishnakuruppath@gmail.com)
-
+Integrated M.Tech in Software Engineering
 *Independent product management case study. Concept only; not affiliated with or endorsed by Swiggy or Zomato.*
