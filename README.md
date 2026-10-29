@@ -27,6 +27,7 @@ Integrated M.Tech in Software Engineering
 | **Fitness App Onboarding UX Audit** | UX Teardown · Growth & Activation · Heuristic Audit | Audits Noom's 40-screen onboarding funnel against Nielsen Norman heuristics, identifying 5 "almost quit" friction gates and proposing a value-first redesign. | [View UX Audit →](./Fitness-App-Onboarding-UX-Audit) |
 | **Swiggy App Store Review Analysis** | Voice of Customer (VoC) · Defect Prioritization · Support UX | Analyzes 50 negative App Store reviews to uncover churn drivers, proving 64% of 1-star rage stems from refund denials, and specifies the TrustShield instant resolution fix. | [View Review Analysis →](./Swiggy-App-Store-Review-Analysis) |
 | **Nykaa Onboarding UX Audit & A/B Test Plan** | UX Onboarding Audit · Growth Experimentation · A/B Testing | Audits Nykaa's first-time onboarding funnel, synthesizes 50 app reviews, and designs an A/B test (Guest-First Browsing vs. Mandatory Phone Wall) targeting a +32% activation lift. | [View A/B Test Plan →](./Nykaa-UX-Onboarding-AB-Test-Plan) |
+| **WhatsApp Feature Prioritization** | Backlog Prioritization · 2x2 Impact vs Effort · E2EE Architecture | Evaluates and scores 10 feature concepts for WhatsApp, mapping Quick Wins vs Big Bets on a 2x2 matrix, and detailing execution specs for the Top 3 features. | [View Prioritization →](./WhatsApp-Feature-Prioritization-Matrix) |
 
 ---
 
@@ -153,6 +154,22 @@ Integrated M.Tech in Software Engineering
 
 ---
 
+### Spotlight 9: [WhatsApp 10-Feature Prioritization Matrix (Impact vs. Effort)](./WhatsApp-Feature-Prioritization-Matrix)
+
+> **"Ranking 10 High-Value Opportunities & Architectural Teardown of the Top 3 Strategic Bets"**
+
+- **The Product Audited:** WhatsApp (Meta).
+- **The Prioritization Method:** Evaluated and scored 10 feature concepts on a 1–5 scale of user impact vs. engineering effort, mapping items into Quick Wins, Big Bets, Fill-Ins, and Avoid.
+- **The Top 3 Strategic Bets:**
+  1. **Scheduled Messages (Rank 1 - Quick Win):** Send later functionality with timezone-aware local queuing.
+  2. **Group Catch-Up AI Summary (Rank 2 - Big Bet):** On-device small language model distilling 100+ unread messages under zero-cloud E2EE constraints.
+  3. **Smart Search by Meaning (Rank 3 - Big Bet):** Semantic neural search powered by on-device vector embeddings.
+- **Visual Artifacts Included:** High-res 2x2 Impact vs. Effort quadrant map and a 3-screen mobile UI mockup panel.
+
+👉 **[Read the full WhatsApp Prioritization Case Study](./WhatsApp-Feature-Prioritization-Matrix)**
+
+---
+
 ## 🛠️ Core Competencies & Tooling
 
 - **Product Discovery & Definition:** User interviews, empathy mapping, problem statement formulation, PRDs, user stories.
@@ -160,6 +177,7 @@ Integrated M.Tech in Software Engineering
 - **Product Analytics & Experimentation:** Success & guardrail metrics definition, North Star hierarchy, A/B test rollout frameworks, survey instrumentation.
 - **UX Audits & Heuristic Evaluation:** Onboarding funnel analysis, cognitive load reduction, dark pattern elimination, Nielsen Norman heuristics.
 - **Growth Experimentation & A/B Testing:** Hypothesis formulation, sample size sizing, variant specification, guardrail definitions.
+- **Feature Prioritization & Strategy:** 2x2 Impact vs. Effort frameworks, RICE scoring, privacy/E2EE architectural trade-offs.
 - **Voice of Customer (VoC) Analysis:** App store review scraping & classification, defect taxonomy, Pareto churn modeling.
 - **Competitive Strategy & Market Sizing:** Funnel teardowns, subscription & loyalty economics, CAC/LTV analysis.
 - **Technical & Agile Execution:** Software engineering background (Integrated M.Tech), API/privacy constraints understanding, sprint planning & backlog management.
@@ -204,11 +222,16 @@ Product-Project-Management-portfolio/
 │   └── complaint/                                     # Raw review screenshots and 50-entry log
 │       ├── README.md                                  # 50-review screenshot index
 │       └── [1.jpeg - 50.jpeg]                         # 50 captured user review screenshots
-└── Nykaa-UX-Onboarding-AB-Test-Plan/                  # Growth & A/B Testing: Guest-first lazy registration
-    ├── README.md                                      # Heuristic evaluation, scorecard & test protocol
-    └── assets/                                        # Cover visual & Control vs Variant UI mockup
-        ├── cover-thumbnail.png
-        └── comparison-01-sign-in-wall.png
+├── Nykaa-UX-Onboarding-AB-Test-Plan/                  # Growth & A/B Testing: Guest-first lazy registration
+│   ├── README.md                                      # Heuristic evaluation, scorecard & test protocol
+│   └── assets/                                        # Cover visual & Control vs Variant UI mockup
+│       ├── cover-thumbnail.png
+│       └── comparison-01-sign-in-wall.png
+└── WhatsApp-Feature-Prioritization-Matrix/           # Backlog Prioritization: 2x2 Impact vs Effort
+    ├── README.md                                      # 10-feature scoring matrix & top 3 deep-dive
+    └── assets/                                        # 2x2 quadrant map & top 3 UI mockups
+        ├── prioritization-2x2-matrix.png
+        └── top-3-features-ui-mockups.png
 ```
 
 ---
