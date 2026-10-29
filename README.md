@@ -84,7 +84,7 @@ When tracking an order, customers need to understand:
 ## 4. Before and After
 
 The redesign retains the familiar structure of a food-delivery tracking screen while introducing contextual information where it can help customers most.
-
+| <img src="assets/before.png" alt="Before: Existing layout recreation" width="360"/> | <img src="assets/before vs after.png" alt="After: Proposed delivery sequence & route transparency" width="360"/> |
 | Before (Existing-Layout Recreation) | After (Proposed Redesign Concept) |
 |:---:|:---:|
 | <img src="assets/before.png" alt="Before: Existing layout recreation" width="360"/> | <img src="assets/after.png" alt="After: Proposed delivery sequence & route transparency" width="360"/> |
