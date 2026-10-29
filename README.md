@@ -23,6 +23,7 @@ Integrated M.Tech in Software Engineering
 | **Campus Ride-Sharing & Travel Reliability** | User Research · Discovery · Trust & Safety | Investigates off-campus travel friction across 5 student archetypes, identifying coordination breakdown and trust barriers, and defining a verified carpooling framework. | [View Case Study →](./Campus-Ride-Sharing-User-Research) |
 | **Beauty E-Commerce Competitor Analysis** | Product Strategy · Funnel Economics · Loyalty | Evaluates Nykaa, Purplle, and Tira on user acquisition, spend-based vs. subscription memberships, and proposes a zero-threshold trial pass to solve the new-user conversion chasm. | [View Case Study →](./Beauty-Ecommerce-Competitor-Analysis) |
 | **Instagram Metrics Breakdown & Measurement** | Product Analytics · Engagement Mechanics · Growth | Replaces passive "time spent" vanity metrics with a Weekly Active Connectors (WAC) North Star, 3 input drivers, and anti-toxicity guardrails. | [View Case Study →](./Instagram-Metrics-Breakdown-Framework) |
+| **Nykaa First-Order Trial Pass (PRD)** | Growth PRD · Checkout Conversion · Fraud Controls | An execution-ready PRD solving small-basket checkout abandonment by waiving the ₹70 shipping charge under ₹299 and offering a complimentary deluxe sample. | [View PRD →](./Nykaa-First-Order-Trial-Pass-PRD) |
 
 ---
 
@@ -89,6 +90,20 @@ Integrated M.Tech in Software Engineering
 
 ---
 
+### Spotlight 5: [Nykaa First-Order Beauty Trial Pass — One-Page PRD](./Nykaa-First-Order-Trial-Pass-PRD)
+
+> **"Eliminating Checkout Friction for Small-Basket New User Acquisition & Repeat Conversion"**
+
+- **The Problem:** Nykaa's standard ₹70 shipping charge on orders $< ₹299 creates prohibitive friction for first-time shoppers wanting to make a small trial purchase (e.g., an ₹199 lipstick), causing high checkout abandonment.
+- **The Feature Solution:** An automated, zero-coupon welcome benefit that waives the ₹70 shipping fee on a new user's first order under ₹299 and unlocks an optional branded sample mini.
+- **Fraud & Abuse Protection:** 4-layer defense model (hardware device fingerprinting, carrier-verified OTP, delivery address clustering, and payment instrument limits).
+- **Success & Guardrail Metrics:** First-order conversion lift target of $+10\text{--}15\%$, $\ge 25\%$ 60-day repeat order velocity, bounded by logistics cost caps ($\le ₹65$) and RTO baselines.
+- **Artifacts Included:** End-to-end functional requirements matrix, low-fidelity checkout wireframes, system sequence diagrams, and phased A/B rollout schedule.
+
+👉 **[Read the full Nykaa PRD](./Nykaa-First-Order-Trial-Pass-PRD)**
+
+---
+
 ## 🛠️ Core Competencies & Tooling
 
 - **Product Discovery & Definition:** User interviews, empathy mapping, problem statement formulation, PRDs, user stories.
@@ -118,9 +133,13 @@ Product-Project-Management-portfolio/
 │   ├── README.md                                      # Comparative analysis & trial pass PRD
 │   └── assets/                                        # Visual diagrams & charts
 │       └── .gitkeep
-└── Instagram-Metrics-Breakdown-Framework/             # Case Study: Product analytics & North Star
-    ├── README.md                                      # Metric tree, guardrails, & decision rules
-    └── assets/                                        # Supporting charts & models
+├── Instagram-Metrics-Breakdown-Framework/             # Case Study: Product analytics & North Star
+│   ├── README.md                                      # Metric tree, guardrails, & decision rules
+│   └── assets/                                        # Supporting charts & models
+│       └── .gitkeep
+└── Nykaa-First-Order-Trial-Pass-PRD/                   # Execution PRD: Checkout friction & growth
+    ├── README.md                                      # Comprehensive one-page PRD specification
+    └── assets/                                        # UX wireframes & architecture diagrams
         └── .gitkeep
 ```
 
