@@ -25,6 +25,7 @@ Integrated M.Tech in Software Engineering
 | **Instagram Metrics Breakdown & Measurement** | Product Analytics · Engagement Mechanics · Growth | Replaces passive "time spent" vanity metrics with a Weekly Active Connectors (WAC) North Star, 3 input drivers, and anti-toxicity guardrails. | [View Case Study →](./Instagram-Metrics-Breakdown-Framework) |
 | **Nykaa First-Order Trial Pass (PRD)** | Growth PRD · Checkout Conversion · Fraud Controls | An execution-ready PRD solving small-basket checkout abandonment by waiving the ₹70 shipping charge under ₹299 and offering a complimentary deluxe sample. | [View PRD →](./Nykaa-First-Order-Trial-Pass-PRD) |
 | **Fitness App Onboarding UX Audit** | UX Teardown · Growth & Activation · Heuristic Audit | Audits Noom's 40-screen onboarding funnel against Nielsen Norman heuristics, identifying 5 "almost quit" friction gates and proposing a value-first redesign. | [View UX Audit →](./Fitness-App-Onboarding-UX-Audit) |
+| **Swiggy App Store Review Analysis** | Voice of Customer (VoC) · Defect Prioritization · Support UX | Analyzes 50 negative App Store reviews to uncover churn drivers, proving 64% of 1-star rage stems from refund denials, and specifies the TrustShield instant resolution fix. | [View Review Analysis →](./Swiggy-App-Store-Review-Analysis) |
 
 ---
 
@@ -123,12 +124,27 @@ Integrated M.Tech in Software Engineering
 
 ---
 
+### Spotlight 7: [Swiggy App Store Review Analysis — Voice of the Customer (VoC)](./Swiggy-App-Store-Review-Analysis)
+
+> **"Analyzing 50 Negative Reviews, Grouping Churn Drivers, and Specifying One High-Impact Fix"**
+
+- **The Product Audited:** Swiggy (Food Delivery & Swiggy Instamart).
+- **The Core Finding:** An audit of 50 consecutive 1-star & 2-star reviews reveals that **64% of public 1-star ratings stem from post-delivery resolution failure**—specifically, hostile support chatbots refusing refunds for missing or spilled items.
+- **The Recommended Fix:** **Swiggy TrustShield**—an automated 1-tap item-level resolution flow with Account Trust Scoring (ATS), eliminating the adversarial chatbot loop and granting instant wallet credit (+10% loyalty bonus) or re-order dispatch.
+- **The Raw Complaints Dataset:** 50 cataloged customer reviews with a dedicated screenshot gallery in [`/complaints`](./Swiggy-App-Store-Review-Analysis/complaints).
+- **Target Impact:** 30-day post-complaint retention lift ($38.2\% \rightarrow \ge 72.0\%$) and public App Store rating lift from $3.9 \rightarrow 4.4$ stars.
+
+👉 **[Read the full Swiggy VoC Analysis](./Swiggy-App-Store-Review-Analysis)**
+
+---
+
 ## 🛠️ Core Competencies & Tooling
 
 - **Product Discovery & Definition:** User interviews, empathy mapping, problem statement formulation, PRDs, user stories.
 - **UI/UX & Wireframing:** Information architecture, progressive disclosure, edge case mapping, screen redesigns.
 - **Product Analytics & Experimentation:** Success & guardrail metrics definition, North Star hierarchy, A/B test rollout frameworks, survey instrumentation.
 - **UX Audits & Heuristic Evaluation:** Onboarding funnel analysis, cognitive load reduction, dark pattern elimination, Nielsen Norman heuristics.
+- **Voice of Customer (VoC) Analysis:** App store review scraping & classification, defect taxonomy, Pareto churn modeling.
 - **Competitive Strategy & Market Sizing:** Funnel teardowns, subscription & loyalty economics, CAC/LTV analysis.
 - **Technical & Agile Execution:** Software engineering background (Integrated M.Tech), API/privacy constraints understanding, sprint planning & backlog management.
 
@@ -161,11 +177,16 @@ Product-Project-Management-portfolio/
 │   ├── README.md                                      # Comprehensive one-page PRD specification
 │   └── assets/                                        # UX wireframes & architecture diagrams
 │       └── .gitkeep
-└── Fitness-App-Onboarding-UX-Audit/                   # UX Case Study: Onboarding friction & audit
-    ├── README.md                                      # 5-gate heuristic teardown & redesign spec
-    ├── screenshots/                                   # Audit screens & teardown captures
-    │   └── .gitkeep
-    └── redesigns/                                     # Value-first wireframes & architecture
+├── Fitness-App-Onboarding-UX-Audit/                   # UX Case Study: Onboarding friction & audit
+│   ├── README.md                                      # 5-gate heuristic teardown & redesign spec
+│   ├── screenshots/                                   # Audit screens & teardown captures
+│   │   └── .gitkeep
+│   └── redesigns/                                     # Value-first wireframes & architecture
+│       └── .gitkeep
+└── Swiggy-App-Store-Review-Analysis/                  # VoC Case Study: 50 review audit & resolution fix
+    ├── README.md                                      # Review taxonomy, Pareto chart & PRD
+    └── complaints/                                    # Raw review screenshots and 50-entry log
+        ├── README.md                                  # 50-review classification table & guide
         └── .gitkeep
 ```
 
