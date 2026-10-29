@@ -1,171 +1,327 @@
-# Making Delivery Detours Understandable: A One-Screen Redesign of Food-Delivery Order Tracking
+# Making Delivery Detours Understandable
+### A One-Screen Redesign of Food-Delivery Order Tracking
 
-> A self-directed product case study. One problem, one screen, one measurable goal.
+*A self-directed product management case study: one problem, one screen, one measurable goal.*
 
-| | |
+| | Details |
 |---|---|
-| **Type** | Product UX improvement (case study) |
-| **Role** | Product Manager (self-directed) |
-| **Scope** | One screen: live order tracking |
-| **Status** | Concept and prototype stage. Not yet validated with users |
+| **Project type** | Product Management · UX Improvement |
+| **Role** | Product Manager — Self-Directed Case Study |
+| **Product** | Swiggy (independent concept) |
+| **Scope** | Live order-tracking screen |
+| **Stage** | Concept and prototype development |
+| **Primary goal** | Improve customers' understanding of delivery progress |
 
-> **Disclaimer:** Independent case study. Not affiliated with or endorsed by Swiggy, Zomato, or any other company, and no internal data was used. Screens in `assets/` are my own recreations of a common tracking layout, with made-up names and places. Any real app screenshots I add are for commentary and have personal details blurred.
+> **Disclaimer:** This is an independent product case study and is not affiliated with or endorsed by Swiggy, Zomato, or any other company. It uses no internal company data. The proposed screens are personal recreations of a common food-delivery tracking experience. Any real application screenshots used for analysis will have personal information obscured.
 
 ---
 
-## 1. Summary
+## 1. Overview
 
-When a delivery partner takes an unexpected route, customers cannot tell whether another delivery stop is affecting their order. The tracking screen shows a map and an ETA, but not *why* the route looks the way it does.
+When a delivery partner takes an unexpected route, customers may wonder whether another delivery stop is affecting their order. A map and estimated arrival time (ETA) provide useful information, but they may not explain why the route has changed.
 
-**Proposal:** keep the familiar tracking layout and add three things:
+This project explores how a small improvement to the live order-tracking screen could make delivery progress easier to understand without adding unnecessary complexity or compromising other customers' privacy.
 
-1. An ETA that is more prominent and visibly flags changes.
-2. A short delivery sequence explaining a *confirmed* nearby stop.
-3. A one-line "Why this route?" explanation that never reveals other customers' details.
+### The proposed solution
 
-**Primary metric:** a 1 to 5 delivery-status clarity score.
+Enhance the existing tracking experience with three improvements:
+
+- **Clearer ETA:** Make the estimated arrival time prominent and communicate meaningful changes.
+- **Delivery sequence:** Explain confirmed intermediate delivery stops in a simple, easy-to-understand format.
+- **Route explanation:** Add a concise “Why this route?” message that explains relevant detours without revealing other customers' personal information.
+
+**Primary success metric:** Delivery-status clarity score, measured on a 1–5 scale.
+
+The concept is based on a personal observation. Its prevalence, underlying causes, and potential impact remain to be validated.
 
 ---
 
-## 2. Before and after
+## 2. The Problem
 
-| Before: current layout | After: redesign |
+### Customer observation
+
+During a food-delivery order, I noticed the delivery partner travelling along an unexpected route. Without a clear explanation of whether another delivery was scheduled first, it was difficult to understand what was happening.
+
+This led to a product question:
+
+**Can the order-tracking experience explain confirmed delivery stops so customers can better understand their order's progress?**
+
+### Problem statement
+
+Frequent food-delivery customers may feel uncertain when their delivery partner travels along an unexpected route. Without clear information about the delivery sequence, they may struggle to understand whether an intermediate stop is affecting their order.
+
+This uncertainty could reduce confidence in the tracking experience, even when the order remains within its estimated delivery window.
+
+### What is known and unknown?
+
+| Category | Current understanding |
 |---|---|
-| ![Before](assets/before.png) | ![After](assets/after.png) |
+| Observed | A delivery partner travelled along an unexpected route during my order. |
+| Hypothesis | Some customers may interpret an unexplained detour as a delay or a tracking problem. |
+| Unknown | How frequently this occurs and how many customers experience it. |
+| Unknown | Whether batching, traffic, navigation, or another factor caused the observed route. |
+| To validate | Whether explaining confirmed stops improves customer understanding and satisfaction. |
 
-Both screens share the same structure: map, header, partner marker, home pin, status card, ETA badge, delivery-instructions row, and call button. The redesign only **adds** elements.
+---
 
-| # | Addition | Purpose |
+## 3. Target User
+
+**Primary segment:** Frequent food-delivery customers who value predictable and transparent delivery updates.
+
+### User need
+
+“When my delivery partner takes an unexpected route, I want to understand what is happening with my order so I can set realistic expectations about its arrival.”
+
+### Jobs to be done
+
+When tracking an order, customers need to understand:
+
+- Where their order is in the delivery process.
+- Whether a confirmed intermediate stop comes before their delivery.
+- Whether their estimated arrival time has changed.
+- What action to take if the delay becomes significant.
+
+---
+
+## 4. Before and After
+
+The redesign retains the familiar structure of a food-delivery tracking screen while introducing contextual information where it can help customers most.
+
+| Before | Proposed redesign |
+|---|---|
+| ![Before redesign — original tracking layout](assets/before.png) | ![After redesign — delivery transparency concept](assets/after.png) |
+| Existing-layout recreation | Proposed concept |
+
+*The “before” screen is a recreation for design comparison, not an official internal Swiggy interface. The “after” screen illustrates a proposed experience, not a live product feature.*
+
+### Design changes
+
+| # | Proposed change | User benefit |
 |---|---|---|
-| 1 | ETA as a clock time, with an "Updated +N min" tag when it changes | Customers anchor on the ETA first. Visible changes build trust |
-| 2 | Delivery sequence: picked up, then nearby drop-off, then your order | Answers "is another stop affecting my order?" at a glance |
-| 3 | "Why this route?" line with a privacy note | Explains the detour in plain language |
-| Map | "Quick stop" marker on the route. Solid line is the current leg and dashed line is the leg after the stop | Makes the route match what the card says |
+| 1 | Prominent ETA with a meaningful “Updated by N min” indicator when appropriate | Makes arrival expectations and changes easier to understand. |
+| 2 | A delivery sequence showing order pickup, a confirmed intermediate stop, and the customer's delivery | Explains the order of events at a glance. |
+| 3 | A “Why this route?” explanation | Provides context instead of leaving customers to guess. |
+| 4 | A route visualization distinguishing the current leg from a confirmed subsequent leg | Helps connect the explanation with the displayed route. |
+
+### Design principle
+
+**Explain what is known; never guess what is happening.**
+
+The interface should only communicate an intermediate stop when the underlying delivery system confirms it. If that information is unavailable, the experience should fall back to the standard tracking view.
 
 ---
 
-## 3. Problem
-
-Frequent customers may feel uncertain when their delivery partner travels along an unexpected route. Without a clear explanation of the delivery sequence, they may not know whether another stop is affecting their order.
-
-- **Origin:** a personal customer observation.
-- **Not yet known:** how often this happens, how many customers it affects, and whether batching is the real cause (see [Limitations](#9-limitations)).
-
-## 4. Target user
-
-Frequent food-delivery customers who want predictable, transparent delivery updates.
-
----
-
-## 5. Solution and design decisions
+## 5. Product Decisions and Trade-offs
 
 | Decision | Rationale | Trade-off |
 |---|---|---|
-| Explain only **confirmed** stops | Avoids false claims when the system is only guessing | Feature stays silent when stop data is unavailable |
-| Keep ETA prominent and show changes | ETA is the main source of anxiety | Frequent updates can feel unstable, so a change threshold is needed |
-| Never show other customers' name, address, or exact location | Privacy and safety | Explanation stays generic |
-| Plain-language copy | Works across literacy levels | Needs localization testing |
-| Same layout as the current screen | Lower learning cost and lower build risk | Less room for bolder changes |
+| Show only confirmed delivery stops | Prevents misleading explanations based on assumptions about the partner's movement. | The explanation may not appear in every delivery. |
+| Keep ETA prominent | Arrival expectations are central to the tracking experience. | Frequent ETA changes may create additional uncertainty. |
+| Explain stops without identifying other customers | Protects privacy and personal location information. | Explanations must remain general. |
+| Use plain, concise language | Reduces the effort required to understand delivery progress. | Copy requires localization and accessibility testing. |
+| Retain the familiar tracking layout | Limits disruption to existing customer habits. | The design has less freedom for major structural changes. |
 
-### Edge states to design
+### Edge cases
 
-| State | Proposed behavior |
+A useful design must account for situations beyond the ideal delivery flow.
+
+| Scenario | Proposed behavior |
 |---|---|
-| No intermediate stop | Show the current screen with no sequence row |
-| One stop | Show the sequence as designed |
-| Two or more stops | Collapse to "2 nearby drop-offs first" |
-| Stop cancelled mid-route | Remove it from the sequence and update the ETA with a reason |
-| Large delay | Show a short apology line and a support option |
-| Stop data unavailable | Fall back to the current screen. Never infer a stop from partner movement |
+| No intermediate stop | Show the standard tracking experience. |
+| One confirmed intermediate stop | Explain the stop and display the delivery sequence. |
+| Multiple confirmed stops | Summarize the number of stops without exposing other customers' details. |
+| A stop is cancelled | Update the sequence and ETA when reliable information is available. |
+| Significant delay | Communicate the revised ETA and offer access to support. |
+| Stop information is unavailable | Do not infer a stop from route movement; use the standard tracking view. |
 
 ---
 
-## 6. Competitor check
+## 6. Competitor Research
 
-I will compare what each major app shows during live tracking, using my own screenshots from real orders.
+The next research step is to compare the live tracking experiences of relevant food-delivery applications.
 
-| Element | App A | App B |
+The comparison will focus on observed functionality rather than assumptions about what competitors support.
+
+| Evaluation criterion | Swiggy | Zomato |
 |---|---|---|
-| Partner location on map | _to verify_ | _to verify_ |
-| ETA shown and updated | _to verify_ | _to verify_ |
-| Explains a detour or another stop | _to verify_ | _to verify_ |
-| Status steps shown | _to verify_ | _to verify_ |
+| Delivery partner location shown on map | To verify | To verify |
+| ETA visibility and updates | To verify | To verify |
+| Intermediate-stop or delivery-sequence explanation | To verify | To verify |
+| Delivery progress indicators | To verify | To verify |
 
-> Filled in only from what I observe directly. No claims about competitors without evidence.
+### Research method
+
+1. Observe the tracking experience during real orders where possible.
+2. Capture relevant screens without retaining personal or sensitive information.
+3. Record what each application visibly communicates.
+4. Distinguish directly observed functionality from interpretation.
+5. Identify any unmet customer need that the proposed redesign could address.
+
+**Research status:** Pending direct observation and documentation.
+
+No conclusion about competitor capabilities is claimed at this stage.
 
 ---
 
-## 7. Success measurement
+## 7. Success Metrics
 
-| Metric | Role | Definition |
+The feature's objective is not simply to display more information. It is to help customers understand their delivery progress without reducing the reliability of their expectations.
+
+### Primary metric
+
+**Delivery-status clarity score**
+
+Ask customers:
+
+“How clear was the information provided about your order's delivery progress?”
+
+Use a 1–5 scale, where 1 means “Not at all clear” and 5 means “Extremely clear.”
+
+### Supporting metrics
+
+| Metric | Definition | Purpose |
 |---|---|---|
-| **Delivery-status clarity score** | Primary | In-flow 1 to 5 rating: "How clear was your delivery status?" |
-| Order-tracking satisfaction | Supporting | Rating after delivery |
-| Delivery-related support contacts | Supporting | Route or ETA contacts per 1,000 orders |
-| ETA accuracy | Guardrail | Mean absolute error between shown and actual arrival time |
+| Order-tracking satisfaction | Customer rating of the tracking experience | Understand overall perceived quality. |
+| Delivery-related support contacts | Route- or ETA-related contacts per 1,000 orders | Assess whether avoidable confusion decreases. |
+| ETA accuracy | Mean absolute error between the displayed ETA and actual arrival time | Ensure transparency does not undermine arrival-time reliability. |
 
-**Decision rule (set before testing):** recommend a wider rollout only if clarity improves meaningfully over baseline **and** ETA accuracy does not get worse.
+### Decision rule
 
----
+Recommend a broader rollout only if the redesigned experience produces a meaningful improvement in delivery-status clarity and does not worsen ETA accuracy beyond a predefined acceptable threshold.
 
-## 8. Validation plan
+The baseline, minimum meaningful improvement, sample size, and guardrail threshold must be defined before an experiment begins.
 
-1. **Interview** five frequent customers about their last tracking experience.
-2. **Prototype** the before and after screens at low fidelity.
-3. **Test comprehension:** can users explain what is happening and why the ETA changed?
-4. **Compare** results against a baseline measured on the current screen.
-5. **Decide** on a wider rollout only after the above.
-
-<details>
-<summary>Interview guide</summary>
-
-- Tell me about the last time you tracked an order. What did you look at first?
-- Has the delivery partner ever taken a route that surprised you? What did you think was happening?
-- What did you do next? (Wait, call, contact support?)
-- What information would have helped most at that moment?
-- After the prototype: in your own words, what is happening with this order?
-
-</details>
-
-**If validated, rollout:** A/B test on orders with confirmed stops, then expand, then iterate on copy, localization, and accessibility.
+**Important:** These metrics are proposed evaluation criteria, not measured results. No improvement is claimed without evidence.
 
 ---
 
-## 9. Limitations
+## 8. Validation Plan
 
-- The problem comes from a **single personal observation**.
-- **Prevalence** is unknown.
-- **Cause** is unconfirmed. Confusion could come from batching, traffic, road closures, or something else.
-- **Impact** of the proposed solution is unmeasured.
-- The "before" screen is a recreation, not internal product data.
-- Privacy handling for nearby drop-offs would need review by a privacy and legal team.
+The next phase is designed to determine whether the problem is sufficiently common and whether the proposed interface addresses it.
+
+### Phase 1 — Customer discovery
+
+Interview five frequent food-delivery customers about their recent order-tracking experiences.
+
+Explore what they noticed, what they expected, and how they responded to unexpected route changes.
+
+### Phase 2 — Prototype
+
+Create low-fidelity before-and-after screens that communicate the same order state while varying the delivery-transparency information.
+
+### Phase 3 — Comprehension testing
+
+Ask participants to explain, in their own words:
+
+- What is happening with the order?
+- Is an intermediate stop confirmed?
+- What does the ETA indicate?
+- What would they do if the estimated arrival time changed?
+
+Avoid leading participants toward the intended answer.
+
+### Phase 4 — Evaluate
+
+Record comprehension, perceived clarity, confusion, and qualitative feedback. Compare the proposed design against the baseline experience.
+
+### Phase 5 — Experiment and decision
+
+If early research supports the hypothesis, consider a controlled experiment on eligible orders with confirmed intermediate stops.
+
+Evaluate the primary metric alongside ETA accuracy, delivery-related support contacts, and privacy requirements before recommending wider deployment.
+
+### Customer interview guide
+
+1. Tell me about the last time you tracked a food-delivery order. What did you look at first?
+2. Have you experienced an unexpected route change? What did you think was happening?
+3. What did you do next? Did you wait, contact the delivery partner, or reach out to support?
+4. What information would have helped you understand the situation?
+5. After viewing the proposed design, can you explain what is happening with the order?
+6. Is any information confusing, unnecessary, or concerning from a privacy perspective?
+
+The interviews will be used to discover patterns, not to claim statistical representativeness from a sample of five.
 
 ---
 
-## 10. Status
+## 9. Risks and Limitations
 
-- [x] Problem statement and target user
-- [x] Solution concept and mockups
-- [x] Metrics and validation plan
-- [ ] Competitor check with own screenshots
-- [ ] Five customer interviews
-- [ ] Baseline measurement
-- [ ] Low-fidelity prototype and comprehension test
-- [ ] Findings and recommendation
+### Current limitations
+
+- The initial problem originates from a single personal observation.
+- The prevalence and severity of the problem are unknown.
+- The cause of the observed detour has not been confirmed.
+- The proposed solution has not yet been validated with customers.
+- The impact on customer satisfaction, support contacts, and ETA accuracy is unmeasured.
+- The recreated baseline interface may not represent every current application state.
+
+### Product risks
+
+- Incorrectly reporting a stop could mislead customers.
+- Excessively frequent ETA changes could reduce confidence.
+- Showing too much delivery information could create privacy risks.
+- The additional interface elements could increase cognitive load.
+- The required delivery-sequence data may not always be available.
+
+### Mitigations
+
+Use confirmed system events, keep explanations concise, avoid exposing third-party identities or precise locations, and retain a safe fallback to the standard tracking experience.
+
+Any production implementation would require appropriate engineering, operational, privacy, and legal review.
 
 ---
 
-## 11. Repository structure
+## 10. Project Status
 
-```
-.
+### Completed in the concept phase
+
+- [x] Defined the initial problem statement.
+- [x] Identified the target user and user need.
+- [x] Proposed a one-screen solution.
+- [x] Documented design decisions and trade-offs.
+- [x] Defined proposed success metrics.
+- [x] Created a customer-validation plan.
+
+### Remaining work
+
+- [ ] Save and review the original-layout recreation.
+- [ ] Complete the redesigned wireframe.
+- [ ] Conduct five customer interviews.
+- [ ] Complete direct competitor observations.
+- [ ] Test prototype comprehension.
+- [ ] Establish a baseline and experiment criteria.
+- [ ] Document findings and a final recommendation.
+
+---
+
+## 11. Repository Structure
+
+```text
+swiggy-delivery-transparency/
 ├── README.md
 └── assets/
     ├── before.png
     └── after.png
 ```
 
-## 12. Author
+The `assets/` directory contains the visual artifacts used to explain the redesign. Additional research notes, interview findings, and prototype iterations can be added as the case study develops, with personal information removed.
 
-**Trishna K**: Integrated M.Tech Software Engineering, VIT-AP University
+---
+
+## 12. Key Takeaway
+
+This case study explores how a small, contextual improvement to a food-delivery tracking screen could reduce uncertainty for customers.
+
+The central product question is whether explaining confirmed intermediate stops helps customers understand their delivery progress more clearly, without compromising ETA reliability or privacy.
+
+The next step is not to assume the feature works. It is to validate the problem, test the concept, measure the outcome, and use the evidence to decide what to do next.
+
+---
+
+## Author
+
+**Trishna K**  
+Integrated M.Tech in Software Engineering · VIT-AP University
+
 [LinkedIn](#) · [Email](#)
+
+*Independent product management case study. Concept only; not affiliated with or endorsed by Swiggy or Zomato.*
