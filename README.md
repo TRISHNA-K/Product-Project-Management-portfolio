@@ -24,6 +24,7 @@ Integrated M.Tech in Software Engineering
 | **Beauty E-Commerce Competitor Analysis** | Product Strategy · Funnel Economics · Loyalty | Evaluates Nykaa, Purplle, and Tira on user acquisition, spend-based vs. subscription memberships, and proposes a zero-threshold trial pass to solve the new-user conversion chasm. | [View Case Study →](./Beauty-Ecommerce-Competitor-Analysis) |
 | **Instagram Metrics Breakdown & Measurement** | Product Analytics · Engagement Mechanics · Growth | Replaces passive "time spent" vanity metrics with a Weekly Active Connectors (WAC) North Star, 3 input drivers, and anti-toxicity guardrails. | [View Case Study →](./Instagram-Metrics-Breakdown-Framework) |
 | **Nykaa First-Order Trial Pass (PRD)** | Growth PRD · Checkout Conversion · Fraud Controls | An execution-ready PRD solving small-basket checkout abandonment by waiving the ₹70 shipping charge under ₹299 and offering a complimentary deluxe sample. | [View PRD →](./Nykaa-First-Order-Trial-Pass-PRD) |
+| **Fitness App Onboarding UX Audit** | UX Teardown · Growth & Activation · Heuristic Audit | Audits Noom's 40-screen onboarding funnel against Nielsen Norman heuristics, identifying 5 "almost quit" friction gates and proposing a value-first redesign. | [View UX Audit →](./Fitness-App-Onboarding-UX-Audit) |
 
 ---
 
@@ -104,11 +105,30 @@ Integrated M.Tech in Software Engineering
 
 ---
 
+### Spotlight 6: [Fitness App Onboarding UX Audit — Deconstructing Noom](./Fitness-App-Onboarding-UX-Audit)
+
+> **"Documenting Every Point Where Users Almost Quit: A Teardown of the 40-Screen Quiz Funnel, Cognitive Fatigue, and Paywall Psychology"**
+
+- **The Product Audited:** Noom (with comparative benchmarks against MyFitnessPal).
+- **The 5 Friction Gates:** 
+  1. The Infinite Questionnaire Loop (Screens 1–12) — task fatigue & cognitive overload.
+  2. Vulnerable Data Harvesting (Screens 15–20) — premature intimate health queries.
+  3. The Hostage Account Wall (Screen 28) — forced email barrier after heavy sunk cost.
+  4. Premature Push Notification Prompt (Screen 34) — unearned permission requests.
+  5. The Surprise Hard Paywall (Screen 40) — deceptive free-trial opt-ins with hidden close buttons.
+- **The Redesign Interventions:** Segmented 3-chapter milestone indicators, contextual privacy reassurance tooltips, and a transparent value-first preview dashboard with an un-hidden free tier.
+- **Target Impact:** Onboarding completion lift ($\ge +13.6\%$) and Day-1 core logging activation lift ($\ge +10.9\%$) without sacrificing downstream subscriber revenue.
+
+👉 **[Read the full Fitness App UX Audit](./Fitness-App-Onboarding-UX-Audit)**
+
+---
+
 ## 🛠️ Core Competencies & Tooling
 
 - **Product Discovery & Definition:** User interviews, empathy mapping, problem statement formulation, PRDs, user stories.
 - **UI/UX & Wireframing:** Information architecture, progressive disclosure, edge case mapping, screen redesigns.
 - **Product Analytics & Experimentation:** Success & guardrail metrics definition, North Star hierarchy, A/B test rollout frameworks, survey instrumentation.
+- **UX Audits & Heuristic Evaluation:** Onboarding funnel analysis, cognitive load reduction, dark pattern elimination, Nielsen Norman heuristics.
 - **Competitive Strategy & Market Sizing:** Funnel teardowns, subscription & loyalty economics, CAC/LTV analysis.
 - **Technical & Agile Execution:** Software engineering background (Integrated M.Tech), API/privacy constraints understanding, sprint planning & backlog management.
 
@@ -137,9 +157,15 @@ Product-Project-Management-portfolio/
 │   ├── README.md                                      # Metric tree, guardrails, & decision rules
 │   └── assets/                                        # Supporting charts & models
 │       └── .gitkeep
-└── Nykaa-First-Order-Trial-Pass-PRD/                   # Execution PRD: Checkout friction & growth
-    ├── README.md                                      # Comprehensive one-page PRD specification
-    └── assets/                                        # UX wireframes & architecture diagrams
+├── Nykaa-First-Order-Trial-Pass-PRD/                   # Execution PRD: Checkout friction & growth
+│   ├── README.md                                      # Comprehensive one-page PRD specification
+│   └── assets/                                        # UX wireframes & architecture diagrams
+│       └── .gitkeep
+└── Fitness-App-Onboarding-UX-Audit/                   # UX Case Study: Onboarding friction & audit
+    ├── README.md                                      # 5-gate heuristic teardown & redesign spec
+    ├── screenshots/                                   # Audit screens & teardown captures
+    │   └── .gitkeep
+    └── redesigns/                                     # Value-first wireframes & architecture
         └── .gitkeep
 ```
 
