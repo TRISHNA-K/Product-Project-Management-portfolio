@@ -1,0 +1,171 @@
+# Making Delivery Detours Understandable: A One-Screen Redesign of Food-Delivery Order Tracking
+
+> A self-directed product case study. One problem, one screen, one measurable goal.
+
+| | |
+|---|---|
+| **Type** | Product UX improvement (case study) |
+| **Role** | Product Manager (self-directed) |
+| **Scope** | One screen: live order tracking |
+| **Status** | Concept and prototype stage. Not yet validated with users |
+
+> **Disclaimer:** Independent case study. Not affiliated with or endorsed by Swiggy, Zomato, or any other company, and no internal data was used. Screens in `assets/` are my own recreations of a common tracking layout, with made-up names and places. Any real app screenshots I add are for commentary and have personal details blurred.
+
+---
+
+## 1. Summary
+
+When a delivery partner takes an unexpected route, customers cannot tell whether another delivery stop is affecting their order. The tracking screen shows a map and an ETA, but not *why* the route looks the way it does.
+
+**Proposal:** keep the familiar tracking layout and add three things:
+
+1. An ETA that is more prominent and visibly flags changes.
+2. A short delivery sequence explaining a *confirmed* nearby stop.
+3. A one-line "Why this route?" explanation that never reveals other customers' details.
+
+**Primary metric:** a 1 to 5 delivery-status clarity score.
+
+---
+
+## 2. Before and after
+
+| Before: current layout | After: redesign |
+|---|---|
+| ![Before](assets/before.png) | ![After](assets/after.png) |
+
+Both screens share the same structure: map, header, partner marker, home pin, status card, ETA badge, delivery-instructions row, and call button. The redesign only **adds** elements.
+
+| # | Addition | Purpose |
+|---|---|---|
+| 1 | ETA as a clock time, with an "Updated +N min" tag when it changes | Customers anchor on the ETA first. Visible changes build trust |
+| 2 | Delivery sequence: picked up, then nearby drop-off, then your order | Answers "is another stop affecting my order?" at a glance |
+| 3 | "Why this route?" line with a privacy note | Explains the detour in plain language |
+| Map | "Quick stop" marker on the route. Solid line is the current leg and dashed line is the leg after the stop | Makes the route match what the card says |
+
+---
+
+## 3. Problem
+
+Frequent customers may feel uncertain when their delivery partner travels along an unexpected route. Without a clear explanation of the delivery sequence, they may not know whether another stop is affecting their order.
+
+- **Origin:** a personal customer observation.
+- **Not yet known:** how often this happens, how many customers it affects, and whether batching is the real cause (see [Limitations](#9-limitations)).
+
+## 4. Target user
+
+Frequent food-delivery customers who want predictable, transparent delivery updates.
+
+---
+
+## 5. Solution and design decisions
+
+| Decision | Rationale | Trade-off |
+|---|---|---|
+| Explain only **confirmed** stops | Avoids false claims when the system is only guessing | Feature stays silent when stop data is unavailable |
+| Keep ETA prominent and show changes | ETA is the main source of anxiety | Frequent updates can feel unstable, so a change threshold is needed |
+| Never show other customers' name, address, or exact location | Privacy and safety | Explanation stays generic |
+| Plain-language copy | Works across literacy levels | Needs localization testing |
+| Same layout as the current screen | Lower learning cost and lower build risk | Less room for bolder changes |
+
+### Edge states to design
+
+| State | Proposed behavior |
+|---|---|
+| No intermediate stop | Show the current screen with no sequence row |
+| One stop | Show the sequence as designed |
+| Two or more stops | Collapse to "2 nearby drop-offs first" |
+| Stop cancelled mid-route | Remove it from the sequence and update the ETA with a reason |
+| Large delay | Show a short apology line and a support option |
+| Stop data unavailable | Fall back to the current screen. Never infer a stop from partner movement |
+
+---
+
+## 6. Competitor check
+
+I will compare what each major app shows during live tracking, using my own screenshots from real orders.
+
+| Element | App A | App B |
+|---|---|---|
+| Partner location on map | _to verify_ | _to verify_ |
+| ETA shown and updated | _to verify_ | _to verify_ |
+| Explains a detour or another stop | _to verify_ | _to verify_ |
+| Status steps shown | _to verify_ | _to verify_ |
+
+> Filled in only from what I observe directly. No claims about competitors without evidence.
+
+---
+
+## 7. Success measurement
+
+| Metric | Role | Definition |
+|---|---|---|
+| **Delivery-status clarity score** | Primary | In-flow 1 to 5 rating: "How clear was your delivery status?" |
+| Order-tracking satisfaction | Supporting | Rating after delivery |
+| Delivery-related support contacts | Supporting | Route or ETA contacts per 1,000 orders |
+| ETA accuracy | Guardrail | Mean absolute error between shown and actual arrival time |
+
+**Decision rule (set before testing):** recommend a wider rollout only if clarity improves meaningfully over baseline **and** ETA accuracy does not get worse.
+
+---
+
+## 8. Validation plan
+
+1. **Interview** five frequent customers about their last tracking experience.
+2. **Prototype** the before and after screens at low fidelity.
+3. **Test comprehension:** can users explain what is happening and why the ETA changed?
+4. **Compare** results against a baseline measured on the current screen.
+5. **Decide** on a wider rollout only after the above.
+
+<details>
+<summary>Interview guide</summary>
+
+- Tell me about the last time you tracked an order. What did you look at first?
+- Has the delivery partner ever taken a route that surprised you? What did you think was happening?
+- What did you do next? (Wait, call, contact support?)
+- What information would have helped most at that moment?
+- After the prototype: in your own words, what is happening with this order?
+
+</details>
+
+**If validated, rollout:** A/B test on orders with confirmed stops, then expand, then iterate on copy, localization, and accessibility.
+
+---
+
+## 9. Limitations
+
+- The problem comes from a **single personal observation**.
+- **Prevalence** is unknown.
+- **Cause** is unconfirmed. Confusion could come from batching, traffic, road closures, or something else.
+- **Impact** of the proposed solution is unmeasured.
+- The "before" screen is a recreation, not internal product data.
+- Privacy handling for nearby drop-offs would need review by a privacy and legal team.
+
+---
+
+## 10. Status
+
+- [x] Problem statement and target user
+- [x] Solution concept and mockups
+- [x] Metrics and validation plan
+- [ ] Competitor check with own screenshots
+- [ ] Five customer interviews
+- [ ] Baseline measurement
+- [ ] Low-fidelity prototype and comprehension test
+- [ ] Findings and recommendation
+
+---
+
+## 11. Repository structure
+
+```
+.
+├── README.md
+└── assets/
+    ├── before.png
+    └── after.png
+```
+
+## 12. Author
+
+**Trishna K**: Integrated M.Tech Software Engineering, VIT-AP University
+[LinkedIn](#) · [Email](#)
