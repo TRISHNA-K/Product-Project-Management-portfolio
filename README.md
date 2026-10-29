@@ -22,6 +22,7 @@ Integrated M.Tech in Software Engineering
 | **Swiggy Delivery Transparency** | UX Redesign · Live Tracking · Retention | Solves post-order detour uncertainty during batched/multi-drop food deliveries with progressive disclosure and contextual badges. | [View Case Study →](./Swiggy-Delivery-Transparency-One-Screen-Redesign) |
 | **Campus Ride-Sharing & Travel Reliability** | User Research · Discovery · Trust & Safety | Investigates off-campus travel friction across 5 student archetypes, identifying coordination breakdown and trust barriers, and defining a verified carpooling framework. | [View Case Study →](./Campus-Ride-Sharing-User-Research) |
 | **Beauty E-Commerce Competitor Analysis** | Product Strategy · Funnel Economics · Loyalty | Evaluates Nykaa, Purplle, and Tira on user acquisition, spend-based vs. subscription memberships, and proposes a zero-threshold trial pass to solve the new-user conversion chasm. | [View Case Study →](./Beauty-Ecommerce-Competitor-Analysis) |
+| **Instagram Metrics Breakdown & Measurement** | Product Analytics · Engagement Mechanics · Growth | Replaces passive "time spent" vanity metrics with a Weekly Active Connectors (WAC) North Star, 3 input drivers, and anti-toxicity guardrails. | [View Case Study →](./Instagram-Metrics-Breakdown-Framework) |
 
 ---
 
@@ -71,11 +72,28 @@ Integrated M.Tech in Software Engineering
 
 ---
 
+### Spotlight 4: [Instagram Metrics Breakdown & Measurement Framework](./Instagram-Metrics-Breakdown-Framework)
+
+> **"Deconstructing Engagement: Moving from Passive 'Time Spent' to Meaningful Social Connection"**
+
+- **The Strategic Problem:** Optimizing for passive time spent or video views leads to "zombie scrolling"—driving high screen time while user satisfaction and durable retention erode.
+- **The North Star Metric:** **Weekly Active Connectors (WAC)**—measuring unique users who perform $\ge 1$ high-intent social interaction (DM, comment, story reply, or outbound share) within a 7-day window.
+- **The 3 Supporting Drivers:** 
+  1. **Creation Rate:** Ensures supply liquidity of authentic peer updates.
+  2. **Share Rate:** Measures content resonance and curational intent via DMs.
+  3. **Week-4 Retention:** Validates durable habit formation for newly onboarded cohorts.
+- **The Non-Negotiable Guardrail:** **Negative-Experience Rate (NER)** (hides, blocks, reports per 1,000 sessions) to prevent algorithms from optimizing for outrage, flame-wars, or spam.
+- **Artifacts Included:** Metric hierarchy flywheel diagram, analytical evaluation of interaction weighting, and real-world A/B test decision scenarios.
+
+👉 **[Read the full Instagram Metrics Framework](./Instagram-Metrics-Breakdown-Framework)**
+
+---
+
 ## 🛠️ Core Competencies & Tooling
 
 - **Product Discovery & Definition:** User interviews, empathy mapping, problem statement formulation, PRDs, user stories.
 - **UI/UX & Wireframing:** Information architecture, progressive disclosure, edge case mapping, screen redesigns.
-- **Product Analytics & Experimentation:** Success & guardrail metrics definition, A/B test rollout frameworks, survey instrumentation.
+- **Product Analytics & Experimentation:** Success & guardrail metrics definition, North Star hierarchy, A/B test rollout frameworks, survey instrumentation.
 - **Competitive Strategy & Market Sizing:** Funnel teardowns, subscription & loyalty economics, CAC/LTV analysis.
 - **Technical & Agile Execution:** Software engineering background (Integrated M.Tech), API/privacy constraints understanding, sprint planning & backlog management.
 
@@ -96,9 +114,13 @@ Product-Project-Management-portfolio/
 │   ├── README.md                                      # User research synthesis & concept PRD
 │   └── assets/                                        # Research artifacts and diagrams
 │       └── .gitkeep
-└── Beauty-Ecommerce-Competitor-Analysis/              # Case Study: Indian BPC competitor teardown
-    ├── README.md                                      # Comparative analysis & trial pass PRD
-    └── assets/                                        # Visual diagrams & charts
+├── Beauty-Ecommerce-Competitor-Analysis/              # Case Study: Indian BPC competitor teardown
+│   ├── README.md                                      # Comparative analysis & trial pass PRD
+│   └── assets/                                        # Visual diagrams & charts
+│       └── .gitkeep
+└── Instagram-Metrics-Breakdown-Framework/             # Case Study: Product analytics & North Star
+    ├── README.md                                      # Metric tree, guardrails, & decision rules
+    └── assets/                                        # Supporting charts & models
         └── .gitkeep
 ```
 
