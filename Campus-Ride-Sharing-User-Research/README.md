@@ -121,12 +121,6 @@ Synthesis of the interview matrix revealed three primary behavioral patterns and
 - **The Observation:** Even P4, who actively avoids sharing cabs, explicitly noted an openness to carpooling if the co-travellers' identities could be verified. P2, P3, and P5 reinforced that campus affiliation (e.g., knowing their year, branch, and hostel residence) converts an "unsafe stranger" into an "acceptable peer."
 - **Product Implication:** **Campus verification is the primary trust bridge.** Generic commercial carpooling fails on campus because it lacks institutional affinity. Showing institutional credentials provides sufficient psychological safety for students.
 
-```mermaid
-pie title "Dominant Pain Point Drivers Identified Across Cohort"
-    "Unreliable Departure / Cancellations (4/5)" : 40
-    "Lack of Passenger Verification / Trust (4/5)" : 40
-    "Unstructured Chat Breakdown (3/5)" : 20
-```
 
 ### Secondary Observations (< 3 of 5 Participants)
 - **Time-of-Day Risk Perception:** Trips departing between 10:00 PM and 6:00 AM amplify vulnerability and anxiety, especially when waiting outside campus gates (P1, P2).
